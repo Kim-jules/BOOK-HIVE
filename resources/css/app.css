@@ -1,11 +1,26 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@font-face {
+    font-family: "Sulphur";
+    src: url(/resources/fonts/SulphurPoint-Regular.ttf);
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+@font-face {
+    font-family: "Zara";
+    src: url(/resources/fonts/OPTIBodoni-Antiqua.otf);
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url(/resources/fonts/JetBrainsMono-Regular.ttf);
+}
+
+.logo {
+    font-family: "JetBrainsMono";
+}
+
+.paragraph {
+    font-family: "Sulphur";
 }
